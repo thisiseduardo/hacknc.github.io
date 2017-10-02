@@ -1,0 +1,148 @@
+[
+    {
+        "date": "Friday",
+        "schedule": [
+            {
+                "time": "7:00 PM",
+                "event": "Check-in begins for traveling hackers",
+                "location": "Lobby"
+            },
+            {
+                "time": "8:00 PM",
+                "event": "Pizza for traveling hackers",
+                "location": "TBA"
+            },
+            {
+                "time": "9:00 PM",
+                "event": "Movie",
+                "location": "TBA"
+            },
+            {
+                "time": "10:00 PM",
+                "event": "Sleeping rooms available",
+                "location": "Squash courts"
+            },
+            {
+                "time": "11:00 PM",
+                "event": "Late night tour of UNC",
+                "location": "UNC campus"
+            }
+        ]
+    },
+    {
+        "date": "Saturday",
+        "schedule": [
+            {
+                "time": "7:00 AM",
+                "event": "Check-in begins for RSVP'd hackers",
+                "location": "Lobby"
+            },
+            {
+                "time": "7:30 AM",
+                "event": "Breakfast",
+                "location": "Food location"
+            },
+            {
+                "time": "9:30 AM",
+                "event": "Check-in begins for everyone",
+                "location": "Lobby"
+            },
+            {
+                "time": "10:00 AM",
+                "event": "Opening ceremony begins",
+                "location": "Woolen Gym"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Team formation",
+                "location": "Woolen Gym"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Sponsor Fair",
+                "location": "Woolen Gym"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Hacking begins!",
+                "location": "Woolen Gym"
+            },
+            {
+                "time": "12:00 PM",
+                "event": "Lunch",
+                "location": "Food location"
+            },
+            {
+                "time": "1:00 PM",
+                "event": "Workshops and talks begin",
+                "location": "Woolen and Fetzer Classrooms"
+            },
+            {
+                "time": "6:30 PM",
+                "event": "Dinner",
+                "location": "Food location"
+            },
+            {
+                "time": "8:00 PM",
+                "event": "Cup stacking with MLH",
+                "location": "Woolen Gym open area"
+            },
+            {
+                "time": "9:00 PM",
+                "event": "Fun",
+                "location": "TBA"
+            },
+            {
+                "time": "10:00 PM",
+                "event": "Games",
+                "location": "TBA"
+            },
+            {
+                "time": "10:00 PM",
+                "event": "Video Games",
+                "location": "Classrooms"
+            },
+            {
+                "time": "12:00 AM",
+                "event": "Midnight Munchies",
+                "location": "SnackNC"
+            },
+            {
+                "time": "1:00 AM",
+                "event": "Frisbee",
+                "location": "Hooker Fields"
+            }
+        ]
+    },
+    {
+        "date": "Sunday",
+        "schedule": [
+            {
+                "time": "8:00 AM",
+                "event": "Breakfast",
+                "location": "Food location"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Hacking ends",
+                "location": "TBA"
+            },
+            {
+                "time": "11:00 AM",
+                "event": "Lunch",
+                "location": "Food location"
+            },
+            {
+                "time": "11:30 AM",
+                "event": "Judging starts",
+                "location": "Woolen Gym"
+            },
+            {
+                "time": "1:30 PM",
+                "event": "Closing Ceremony",
+                "location": "Woolen Gym"
+            }
+        ]
+    }
+ ]
+

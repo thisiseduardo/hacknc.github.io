@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="static/assets/css/main.css"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Rubik|Work+Sans|Cabin|Arvo|Nunito|Josefin+Sans" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link href="static/assets/css/flipclock.css" rel="stylesheet">
+
+        <title>HackNC 2017</title>
+    </head>
+
+    <body class='white-text'>
+
+<a id="mlh-trust-badge"
+    style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+    href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=black"
+target="_blank"><img
+src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/black.svg"
+alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+        <div class="section background-light scrollspy" id='home'>
+            <div class="row center">
+<<<<<<< HEAD
+                <p class="title">HackNC 2017</p>
+                <div class='ge'>November 3rd - 5th, 2017</div>
+                <form method='post' id='pre-registration'>
+                <div class='input-field inline'>
+                    <input name='email' id='email' type='email' class='validate'></input>
+                    <label for='email' data-error='Please enter a valid
+                        email.'>Get on our mailing list!</label>
+=======
+                <div id="tubeswrapper">
+                    <img id="tubes" src="static/assets/images/tubes-only.png">
+                    <!-- <div class='center' id='countdown'></div> -->
+                    <div id='buttons'>
+                            <form method='post'>
+                            <div class='input-field inline'>
+                                <input name='email' id='email' type='email' class='validate'></input>
+                                <label for='email' data-error='Please enter a valid
+                                    email.'>Get on our mailing list!</label>
+                            </div>
+                            <button class='btn component'
+                            id='submit-email'>Submit!</button>
+                            </form>
+                            <p class="btn-large component">Registration Coming Soon!</p>
+                    </div>
+>>>>>>> banner
+                </div>
+                <!-- <p class="title">HackNC 2017</p> -->
+                <!-- <div class='ge'>November 3rd - 5th, 2017</div> -->
+            </div>
+
+            <!-- TODO Setup Scrollspy here -->
+            <div id="navwrapper">  
+                <div id="navbar" class='center'>
+                    <!--MOBILE-->
+                    <ul class='nbar tabs-transparent section table-of-contents hide-on-large-only'>
+                        <li class="nitem"><a href="#home"><span>Home</span></a></li>
+                        <!-- <li class="nitem"><a href="#register">Register</a></li> <--></-->
+                        <li class="nitem"><a href="#travel"><span>Info</span></a></li>
+                        <li class="nitem"><a href="#faq"><span>FAQ</span></a></li>
+                        <li class="nitem"><a href="#contact"><span>Contact</span></a></li>
+                    </ul>
+                    <!--DESKTOP-->
+                    <ul class='nbar tabs-transparent section table-of-contents hide-on-med-and-down'>
+                        <li class="nitem"><a href="#home"><span>Home</span></a></li>
+                        <!-- <li class="nitem"><a href="#register">Register</a></li> -->
+                        <li class="nitem"><a href="#travel"><span>Info</span></a></li>
+                        <li class="nitem"><a href="#faq"><span>FAQ</span></a></li>
+                        <li class="nitem"><a href="#contact"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section background-dark scrollspy" id='register'>
+            <h1>Register</h1>
+            </div> -->
+
+            <!-- Registration Moddal -->
+            <div id="register" class="modal">
+                <div class="modal-content">
+                    <h4>Registration</h4>
+                    <p>FORM TODO</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect
+                        waves-green btn-flat">Submit</a>
+                </div>
+            </div>
+
+
+            <div class="section background-dark scrollspy" id='travel'>
+                <div class="container">
+                    <h2 class="center">General Information</h2>
+                    <!--MOBILE-->
+                    <div class="row hide-on-large-only">
+                        <div class="col s12 center">
+                            {% for para in travel %}
+                            <p> {{ para }} </p>
+                            {% endfor %}
+
+                            <p> We are a MLH sponsored event, please note that we
+                            follow the MLH code of conduct, which can be found
+                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
+
+                        </div>
+                        <div class="col s12 center">
+                            <iframe
+                              width="300"
+                              height="300"
+                              frameborder="0" style="border:0"
+                              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBzbKXif59z3vKRfUXR3LOs_Oc5w-GpB2o
+                                &q=Woollen+Gymnasium+UNC+NC" allowfullscreen>
+                            </iframe>
+                        </div>
+
+                    </div>
+
+                    <!--DESKTOP-->
+                    <div class="row hide-on-med-and-down">
+                        <div class="col s6 center">
+                            {% for para in travel %}
+                            <p>{{ para }}</p>
+                            {% endfor %}
+                            <p> We are a MLH sponsored event, please note that we
+                            follow the MLH code of conduct, which can be found
+                            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">here</a></p>
+
+
+                        </div>
+
+                        <div class="col s6 center">
+                            <iframe
+                              width="600"
+                              height="600"
+                              frameborder="0" style="border:0"
+                              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBzbKXif59z3vKRfUXR3LOs_Oc5w-GpB2o
+                                &q=Woollen+Gymnasium+UNC+NC" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section background-light scrollspy" id='faq'>
+                <div class="container">
+                    <h2 class="center">FAQ</h2>
+                    <ul class="collapsible popout" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header faq-dark"><i class="material-icons"></i>What is a hackathon?</div>
+                            <div class="collapsible-body faq-light"><p>A hackathon is a weekend of fun and learning. You'll become a better programmer, meet awesome people, and make cool stuff.  There will also be opportunities to win cool prizes and network with our sponsors.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-light"><i class="material-icons"></i>What if I'm in high school?</div>
+                            <div class="collapsible-body faq-dark"><p>As long as you'll be 18 by November 3rd, 2017, we would love for you to come to HackNC.  Unfortunately (because of the incredible amount of paperwork involved) we won't be able to accept anyone under the age of 18.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-dark"><i class="material-icons"></i>Can I hack?</div>
+                            <div class="collapsible-body faq-light"><p>High schoolers over 18, undergraduates, and graduate students are welcome to participate as hackers.  Professionals should check out mentorship.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-light"><i class="material-icons"></i>How do I get in?</div>
+                            <div class="collapsible-body faq-dark"><p>Anyone can
+                                attend HackNC. Our admission criteria doesn't
+                                include your level of experience.  However, the
+                                registration system is still under construction,
+                                join our mailing list to get updates!</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-dark"><i class="material-icons"></i>Got any hardware?</div>
+                            <div class="collapsible-body faq-light"><p>You bet!  MLH is providing the <a href="https://mlh.io/hardware-lab">full hardware lab</a>. In addition, we will have soldering kits and other assorted components, Arduinos, Raspberry Pis, sensors, and more Pebbles than you can wear on four limbs...</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-light"><i class="material-icons"></i>Can I mentor?</div>
+                            <div class="collapsible-body faq-dark"><p>Professionals are welcome to join as mentors, sponsors, or lecturers.  If you want to come as a mentor, contact us!</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-dark"><i class="material-icons"></i>Will I fit in?</div>
+                            <div class="collapsible-body faq-light"><p>Definitely! HackNC and the UNC Computer Science Department are committed to making computer science a more diverse field. Inclusiveness is a top priority for us, and we've been beginner-friendly from the start.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-light"><i class="material-icons"></i>Can I use old code?</div>
+                            <div class="collapsible-body faq-dark"><p>You may use all the publicly available code and APIs that you want, but the code you will be judged on at the end of the hackathon must be new.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-dark"><i class="material-icons"></i>What about sleep?</div>
+                            <div class="collapsible-body faq-light"><p>You should do it!  Bring your own pillow and sleeping bag or blankets. There will be a sleeping space available Friday and Saturday nights.  More info available on our travel page.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-light"><i class="material-icons"></i>Travel costs?</div>
+                            <div class="collapsible-body faq-dark"><p>If you want to come, we want to help get you here.  We will have a limited number of reimbursements for carpooling.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-dark"><i class="material-icons"></i>Will there be food?</div>
+                            <div class="collapsible-body faq-light"><p>Don’t worry - we’ll provide six full meals throughout the hackathon and there will be plenty of snacks in between. You won’t be hungry.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header faq-light"><i class="material-icons"></i>How can I volunteer or mentor?</div>
+                            <div class="collapsible-body faq-dark"><p>Please
+                                join our mailing list above, we will send out
+                                information later this fall.
+                            </p></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section background-dark scrollspy" id='contact'>
+                <h2 class="center">Contact</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s6 center"><a href="https://www.facebook.com/thehacknc/?fref=ts" class="white-text">
+                            <i class="fa fa-facebook-official"></i> Facebook</a></div>
+                        <div class="col s6 center"><a href="mailto:hello@hacknc.com" class="white-text">
+                            <i class="fa fa-envelope"></i> hello@hacknc.com</a></div>
+                    </div>
+                        <div class="row">
+                        <div class="col s6 center"><a href="https://www.snapchat.com/add/hacknc" class="white-text">
+                            <i class="fa fa-snapchat-square"></i> HackNC</a></div>
+                        <div class="col s6 center"><a href="https://twitter.com/thehacknc" class="white-text">
+                            <i class="fa fa-twitter-square"></i> @TheHackNC</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="static/assets/js/main.js"></script>
+            <script src="static/assets/js/schedule.js"></script>
+            <script src="static/assets/js/register.js"></script>
+            <script src="static/assets/js/flipclock.min.js"></script>
+
+            {% if msg %}
+            <script>
+Materialize.toast('{{ msg }}', 4000)
+            </script>
+            {% endif %}
+    </body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61641591-3', 'auto');
+        ga('send', 'pageview');
+        document.getElementById("pre-registration").addEventListener("submit", function() {
+            ga('send', 'event', 'pre-registration', 'submit');
+        })
+    </script>
+</html>
