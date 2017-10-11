@@ -10,9 +10,10 @@ var breakpoint = 1024/768;
 var longScale = 2.5;
 var shortScale = 3.2;
 
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
 $(document).ready(function() {
-    $('.scrollspy').scrollSpy({"scrollOffset": 0});
-    $('.modal').modal();
+    $('.scrollspy').scrollSpy({"scrollOffset": 20});
     
     var countdownSeconds = 1509753600 - (new Date).getTime()/1000;
     var clock = $('#countdown').FlipClock(countdownSeconds, {
@@ -24,12 +25,19 @@ $(document).ready(function() {
     $('.flip-clock-wrapper').css('margin','0');
     $('#tubes-row').css('height', $(document).width()/maxWidth*bannerHeight + 'px');
     var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
-    $('#countdown').css('zoom', scaleValue);
-    $('#countdown').css('transform','scale(' + scaleValue + ')');
-    var tubeHeight = $('#tubes').height();
-    var ratio = $(window).height()/$(window).width();
-    var heightScale = ratio > breakpoint ? longScale : shortScale;
-    $('#countdown-content').css('height', tubeHeight/heightScale);
+    if(!iOS) {
+        $('#countdown').css('zoom', scaleValue);
+        $('#countdown').css('transform','scale(' + scaleValue + ')');
+        var tubeHeight = $('#tubes').height();
+        var ratio = $(window).height()/$(window).width();
+        var heightScale = ratio > breakpoint ? longScale : shortScale;
+        $('#countdown-content').css('height', tubeHeight/heightScale);
+    }
+    else {
+        $('#countdown-content').remove();
+        $('#date').empty();
+        $('#tubes').css('background-image', "url('/static/assets/images/tubes-only4.png')");
+    }
 
     var navtop = $('#navbar').offset().top;
     var navbar = document.getElementById('navbar');
@@ -53,11 +61,13 @@ $(document).ready(function() {
 
 window.onresize = function() {
     $('#tubes-row').css('height', $(document).width()/maxWidth*bannerHeight + 'px');
-    var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
-    $('#countdown').css('zoom', scaleValue);
-    $('#countdown').css('transform','scale(' + scaleValue + ')');
-    var tubeHeight = $('#tubes').height();
-    var ratio = $(window).height()/$(window).width();
-    var heightScale = ratio > breakpoint ? longScale : shortScale;
-    $('#countdown-content').css('height', tubeHeight/heightScale);
+    if(!iOS) {
+        var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
+        $('#countdown').css('zoom', scaleValue);
+        $('#countdown').css('transform','scale(' + scaleValue + ')');
+        var tubeHeight = $('#tubes').height();
+        var ratio = $(window).height()/$(window).width();
+        var heightScale = ratio > breakpoint ? longScale : shortScale;
+        $('#countdown-content').css('height', tubeHeight/heightScale);
+    }
 };

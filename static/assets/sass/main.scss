@@ -9,6 +9,9 @@ $breakpoints: (
     "desktop-wide": 1440px
 );
 
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
 @mixin mq($width, $type: min) {
     @if map_has_key($breakpoints, $width) {
         $width: map_get($breakpoints, $width);
@@ -78,12 +81,6 @@ $breakpoints: (
 
 .table-of-contents {
     a {
-
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.1) ! important;
-            // padding-bottom: 15px ! important;
-            border-bottom: 2px solid #fff ! important;
-        }
         &.active {
             font-weight: bold ! important;
             background-color: rgba(255, 255, 255, 0.1) ! important;
@@ -97,7 +94,7 @@ $breakpoints: (
 @import 'materialize';
 
 .background-light {
-    background-color: $blue-2;
+    background-color: $blue-1;
     color: $white;
 }
 
@@ -163,12 +160,12 @@ label[for='email'] {
 }
 
 .faq-dark {
-    background-color: $blue-1;
+    background-color: $;
     color: $white;
 }
 
 .faq-light {
-    background-color: $blue-2;
+    background-color: $blue-1;
     color: $white;
 }
 
@@ -227,3 +224,39 @@ label[for='email'] {
 .odd {
     background-color: $purple-3;
 }
+
+.section {
+    #{$a-tags} {
+        color: $yellow-1;
+        text-decoration: none;
+    }
+
+    #{$a-tags-hover} {
+        color: $yellow-1;
+        text-decoration: underline;
+    }
+}
+
+$sponsor-color: $gmaps;
+$gradient-color: $table-gray;
+$radial-percent: 10%;
+
+.sponsors {
+    background: $sponsor-color;
+    color: $blue-1;
+    // background: -webkit-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Safari 5.1 to 6.0 */
+    // background: -o-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Opera 11.6 to 12.0 */
+    // background: -moz-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Firefox 3.6 to 15 */
+    // background: radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Standard syntax */
+    #{$a-tags} {
+        color: $blue-3;
+        text-decoration: none;
+    }
+    #{$a-tags-hover} {
+        color: $blue-3;
+        text-decoration: underline;
+    }
+
+}
+
+

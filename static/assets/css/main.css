@@ -45,9 +45,6 @@
   display: inline-block;
   width: auto; }
 
-.table-of-contents a:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border-bottom: 2px solid #fff !important; }
 .table-of-contents a.active {
   font-weight: bold !important;
   background-color: rgba(255, 255, 255, 0.1) !important;
@@ -6891,7 +6888,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/ }
 
 .background-light {
-  background-color: #3178C4;
+  background-color: #204F80;
   color: #FFFFFF; }
 
 .background-dark {
@@ -6942,11 +6939,11 @@ label[for='email'] {
   height: 100%; }
 
 .faq-dark {
-  background-color: #204F80;
+  background-color: #2C2C31;
   color: #FFFFFF; }
 
 .faq-light {
-  background-color: #3178C4;
+  background-color: #204F80;
   color: #FFFFFF; }
 
 .faq-ans {
@@ -6988,5 +6985,22 @@ label[for='email'] {
 
 .odd {
   background-color: #34248B; }
+
+.section a, .section a:active, .section a:hover, .section a:visited {
+  color: #FFC027;
+  text-decoration: none; }
+.section a:active, .section a:hover {
+  color: #FFC027;
+  text-decoration: underline; }
+
+.sponsors {
+  background: #e4e4df;
+  color: #204F80; }
+  .sponsors a, .sponsors a:active, .sponsors a:hover, .sponsors a:visited {
+    color: #3178C4;
+    text-decoration: none; }
+  .sponsors a:active, .sponsors a:hover {
+    color: #3178C4;
+    text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
