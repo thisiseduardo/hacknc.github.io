@@ -160,7 +160,7 @@ label[for='email'] {
 }
 
 .faq-dark {
-    background-color: $;
+    background-color: $gray;
     color: $white;
 }
 
@@ -259,4 +259,24 @@ $radial-percent: 10%;
 
 }
 
+#contact-links li {
+    list-style-type: none;
+}
 
+#contact-links li.left {
+    float: none !important;
+    width: 100%;
+    @include mq('tablet') {
+        float: left !important;
+        width: 50%;
+    }
+}
+
+#contact-links li.right {
+    float: none !important;
+    width: 100%;
+    @include mq('tablet') {
+        float: right !important;
+        width: 50%;
+    }
+}
