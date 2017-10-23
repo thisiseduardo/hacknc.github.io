@@ -287,17 +287,21 @@ $radial-percent: 10%;
 }
 
 .tier-4 {
-    width: 500px;
+    width: 40%;
+    min-width: 300px;
 }
 
 .tier-3 {
-    width: 300px;
+    width: 30%;
+    min-width: 250px;
 }
 
 .tier-2 {
-    width: 250px;
+    width: 25%;
+    min-width: 250px;
 }
 
 .tier-1 {
-    width: 200px;
+    width: 20%;
+    min-width: 200px;
 }
