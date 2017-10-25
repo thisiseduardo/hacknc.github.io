@@ -1,12 +1,15 @@
 * {
-  font-family: 'Josefin Sans'; }
-
-* {
-  font-size: 20px; }
+  font-family: 'Josefin Sans';
+  font-size: 1.2rem; }
+  @media only screen and (min-width: 768px) {
+    * {
+      font-size: 1.3rem; } }
 
 #home {
   text-align: center;
   padding-bottom: 0;
+  top: 0;
+  left: 0;
   background-image: url("/static/assets/images/vign3L.png");
   background-size: 100%;
   background-repeat: no-repeat; }
@@ -1637,7 +1640,7 @@
 .black {
   background-color: #000000 !important; }
 
-.black-text, #registration a {
+.black-text {
   color: #000000 !important; }
 
 .white {
@@ -6892,28 +6895,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   color: #FFFFFF; }
 
 .background-dark {
-  background-color: #204F80;
+  background-color: #193e66;
   color: #FFFFFF; }
 
 #email-form {
   display: inline-block; }
 
-.component {
+.component, .component:focus {
   background-color: #FFC027;
-  color: #22156E;
-  display: inline-block; }
-
-.component:hover {
-  background-color: #FFC027;
-  color: #FFFFFF; }
-
-#registration a {
+  color: #000000;
+  display: inline-block;
   height: 50% !important;
   width: 20% !important;
   min-width: 200px !important;
   text-decoration: none;
   margin: 10px;
   font-size: 80% !important; }
+
+.component:hover {
+  background-color: #FFC027;
+  color: #FFFFFF; }
 
 #email:focus + label {
   color: #FFFFFF; }
@@ -6939,7 +6940,7 @@ label[for='email'] {
   height: 100%; }
 
 .faq-dark {
-  background-color: #2C2C31;
+  background-color: #193e66;
   color: #FFFFFF; }
 
 .faq-light {
@@ -6992,6 +6993,50 @@ label[for='email'] {
 .section a:active, .section a:hover {
   color: #FFC027;
   text-decoration: underline; }
+
+.section h2 {
+  margin-bottom: 0; }
+
+@media only screen and (min-width: 768px) {
+  .table-container {
+    width: 60% !important;
+    margin-left: 20% !important; } }
+
+#travel .row {
+  margin-bottom: 0; }
+
+.grant-table {
+  width: 60%;
+  min-width: 280px; }
+
+.grant-table td, .grant-table th {
+  padding: 0; }
+
+#schedule table tr:nth-child(even) {
+  background-color: #193e66; }
+
+#schedule table tr:nth-child(odd) {
+  background-color: #204F80; }
+
+.schedule tr {
+  width: 100% !important;
+  border-radius: 5px; }
+
+.time, .event, .place {
+  border-radius: 0px; }
+
+.time {
+  width: 25%; }
+
+.day {
+  background-color: transparent !important; }
+
+.daycell {
+  background-color: transparent;
+  font-size: 1.7rem; }
+  @media only screen and (min-width: 768px) {
+    .daycell {
+      font-size: 2rem; } }
 
 .sponsors {
   background: #e4e4df;

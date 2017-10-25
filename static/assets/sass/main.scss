@@ -26,15 +26,17 @@ $a-tags-hover: 'a:active, a:hover';
 
 * {
     font-family: 'Josefin Sans';
-}
-
-* {
-    font-size: 20px;
+    font-size: 1.2rem;
+    @include mq('tablet') {
+        font-size: 1.3rem;
+    }
 }
 
 #home {
     text-align: center;
     padding-bottom: 0;
+    top: 0;
+    left: 0;
     background-image: url('/static/assets/images/vign3L.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -99,7 +101,7 @@ $a-tags-hover: 'a:active, a:hover';
 }
 
 .background-dark {
-    background-color: $blue-1;
+    background-color: $blue-12;
     color: $white;
 }
 
@@ -107,25 +109,21 @@ $a-tags-hover: 'a:active, a:hover';
     display: inline-block;
 }
 
-.component {
+.component, .component:focus {
     background-color: $yellow-1;
-    color: $purple-4;
+    color: $black;
     display: inline-block;
-}
-
-.component:hover {
-    background-color: $yellow-1;
-    color: $white;
-}
-
-#registration a {
-    @extend .black-text;
     height: 50% !important;
     width: 20% !important;
     min-width: 200px !important;
     text-decoration: none;
     margin: 10px;
     font-size: 80% !important;
+}
+
+.component:hover {
+    background-color: $yellow-1;
+    color: $white;
 }
 
 #email:focus + label {
@@ -152,7 +150,6 @@ label[for='email'] {
 }
 
 .map-container iframe {
-    // position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -160,7 +157,7 @@ label[for='email'] {
 }
 
 .faq-dark {
-    background-color: $gray;
+    background-color: $blue-12;
     color: $white;
 }
 
@@ -237,6 +234,63 @@ label[for='email'] {
     }
 }
 
+.section h2 {
+    margin-bottom: 0;
+}
+
+.table-container {
+    @include mq('tablet') {
+        width: 60% !important;
+        margin-left: 20% !important;
+    }
+}
+
+#travel .row {
+    margin-bottom: 0;
+}
+
+.grant-table {
+    width: 60%;
+    min-width: 280px;
+}
+
+.grant-table td, .grant-table th{
+    padding: 0;
+}
+
+#schedule table tr:nth-child(even) {
+    background-color: $blue-12;
+}
+
+#schedule table tr:nth-child(odd) {
+    background-color: $blue-1;
+}
+
+.schedule tr {
+    width: 100% !important;
+    border-radius: 5px;
+}
+
+.time, .event, .place {
+    border-radius: 0px;
+}
+
+.time {
+    width: 25%;
+}
+
+.day {
+    background-color: transparent !important;
+}
+
+.daycell {
+    background-color: transparent;
+    font-size: 1.7rem;
+    @include mq(tablet) {
+        font-size: 2rem;
+    }
+}
+
 $sponsor-color: $gmaps;
 $gradient-color: $table-gray;
 $radial-percent: 10%;
@@ -244,10 +298,6 @@ $radial-percent: 10%;
 .sponsors {
     background: $sponsor-color;
     color: $blue-1;
-    // background: -webkit-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Safari 5.1 to 6.0 */
-    // background: -o-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Opera 11.6 to 12.0 */
-    // background: -moz-radial-gradient($sponsor-color $radial-percent, $gradient-color); /* For Firefox 3.6 to 15 */
-    // background: radial-gradient($sponsor-color $radial-percent, $gradient-color); /* Standard syntax */
     #{$a-tags} {
         color: $blue-3;
         text-decoration: none;
