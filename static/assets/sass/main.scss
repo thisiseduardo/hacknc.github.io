@@ -26,7 +26,7 @@ $a-tags-hover: 'a:active, a:hover';
 
 * {
     font-family: 'Josefin Sans';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     @include mq('tablet') {
         font-size: 1.3rem;
     }
@@ -206,6 +206,10 @@ label[for='email'] {
     box-shadow: 1px 1px 1px -1px #000000;
 }
 
+.nbar {
+    overflow: hidden;
+}
+
 .nfixed {
     margin-top: 0;
     top: 0;
@@ -353,4 +357,8 @@ $radial-percent: 10%;
 .tier-1 {
     width: 16%;
     min-width: 200px;
+}
+
+#prizes .card {
+    background-color: $blue-12;
 }

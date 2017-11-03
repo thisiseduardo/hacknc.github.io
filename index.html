@@ -7,14 +7,13 @@
 
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="static/assets/css/main.css"></script>
+        <link rel="stylesheet" href="/static/assets/css/main.css"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Bungee|Rubik|Work+Sans|Cabin|Arvo|Nunito|Josefin+Sans" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
         <link href="static/assets/css/flipclock.css" rel="stylesheet">
-
-        <link rel='icon' href='static/assets/images/favicon.png'>
+        <link rel='icon' href='/static/assets/images/favicon.png'>
 
         <title>HackNC 2017</title>
     </head>
@@ -30,10 +29,10 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
         <div class="background-dark scrollspy" id='home'>
             <div class="row center" id="tubes-row">
                 <div id="tubes">
-                    <div id='countdown-content'>
-                        <div id='countdown-wrapper'>
-                            <div id='countdown'></div>
-                        </div>
+                    <div id='countdown-content'>		
+                        <div id='countdown-wrapper'>		
+                            <div id='countdown'></div>		
+                        </div>		
                     </div>
                 </div>
             </div>
@@ -76,6 +75,7 @@ alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
                         <li class="nitem"><a href="#travel"><span>Travel</span></a></li>
                         <li class="nitem"><a href="#schedule"><span>Schedule</span></a></li>
                         <li class="nitem"><a href="#sponsors"><span>Sponsors</span></a></li>
+                        <li class="nitem"><a href="#prizes"><span>Prizes</span></a></li>
                         <li class="nitem"><a href="#contact"><span>Contact</span></a></li>
                     </ul>
                 </div>
@@ -201,6 +201,16 @@ Gymnasium at UNC-Chapel Hill!</p>
                     <h2 class='center'>Travel</h2>
                     <div class='row'>
                         <div class='col s10 offset-s1'>
+                            <h4>Parking</h4>
+                            <p>Free parking is available over the weekend everywhere on campus, but we recommend the following decks:</p>
+                            <ul>
+                                <li><a href="https://www.google.com/maps/dir/Cobb+Parking+Deck,+Chapel+Hill,+NC+27514/Woollen+Gymnasium,+Chapel+Hill,+NC/@35.9107127,-79.0472257,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89acc2ea68ddf24b:0x38f6620f02eadfae!2m2!1d-79.0456262!2d35.9117533!1m5!1m1!1s0x89acc2ebb8543153:0x6c83a40e14111825!2m2!1d-79.0459804!2d35.9094423!3e2">Cobb Parking Deck</a></li>
+                                <li><a href="https://www.google.com/maps/dir/Bell+Tower+Parking+Deck,+Chapel+Hill,+NC/Woollen+Gymnasium,+Chapel+Hill,+NC/@35.9107127,-79.0472257,18z/data=!4m14!4m13!1m5!1m1!1s0x89acc2eedc3bd00f:0x2dd3a16fc7f5b0c9!2m2!1d-79.0500641!2d35.9067103!1m5!1m1!1s0x89acc2ebb8543153:0x6c83a40e14111825!2m2!1d-79.0459804!2d35.9094423!3e2">Bell Tower Parking Deck</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col s10 offset-s1'>
                             <h4>Bus</h4>
                             <p>We will be sending a bus to the Georgia Institute of Technology. More details to follow.</p>
                         </div>
@@ -249,14 +259,19 @@ Gymnasium at UNC-Chapel Hill!</p>
             <div class='section background-light scrollspy' id='schedule'>
                 <h2 class='center'>Schedule</h2>
                 <div class='row center'>
+                    <p>We'll have a rolling check-in the entire weekend, so we can check you in whenever you arrive!</p>
                     <div class='table-container col s12'>
                         <table>
                             <tbody>
+                                <tr class='day'><td class='daycell'>Friday</td></tr>
+                                <tr><td class='time'>7:00 PM</td><td class='event'>Check In</td><td class='place'>Woollen Lobby</td></tr>
+                                <tr><td class='time'>7:00 PM</td><td class='event'>Hang out and have fun</td><td class='place'>Woollen Gym</td></tr>
+                                <tr><td class='time'>9:00 PM</td><td class='event'>Pizza Party</td><td class='place'>Woollen Gym</td></tr>
                                 <tr class='day'><td class='daycell'>Saturday</td></tr>
                                 <tr><td class='time'>7:00 AM</td><td class='event'>Check In</td><td class='place'>Woollen Lobby</td></tr>
                                 <tr><td class='time'>8:00 AM</td><td class='event'>Breakfast</td><td class='place'>Woollen Gym</td></tr>
                                 <tr><td class='time'>10:00 AM</td><td class='event'>Opening Ceremony</td><td class='place'>Woollen Gym</td></tr>
-                                <tr><td class='time'>11:00 AM</td><td class='event'>Hacking Begins</td><td class='place'>Woollen Gym</td></tr>
+                                <tr><td class='time'>11:00 AM</td><td class='event'>Hacking Begins</td><td class='place'>Everywhere</td></tr>
                                 <tr><td class='time'>11:00 AM</td><td class='event'>Sponsor Fair</td><td class='place'>Woollen Gym</td></tr>
                                 <tr><td class='time'>12:00 PM</td><td class='event'>Lunch</td><td class='place'>Woollen Gym</td></tr>
                                 <tr><td class='time'>1:00 PM</td><td class='event'>Workshop and Talks Begin</td><td class='place'>Classrooms</td></tr>
@@ -291,8 +306,6 @@ Gymnasium at UNC-Chapel Hill!</p>
                         <img class='sponsor-image tier-3' src='static/assets/images/sponsors/rv.png'></a>
                     <a href='https://www.genesys.com/'>
                         <img class='sponsor-image tier-1' src='static/assets/images/sponsors/genesys.png'></a>
-                    <a href='https://www.google.com/'>
-                        <img class='sponsor-image tier-1' src='static/assets/images/sponsors/google.png'></a>
                     <a href='https://www.sas.com/'>
                         <img class='sponsor-image tier-1' src='static/assets/images/sponsors/sas.png'></a>
                     <a href='https://www.sonovol.com/'>
@@ -304,10 +317,74 @@ Gymnasium at UNC-Chapel Hill!</p>
                     <p class="center">Looking to sponsor HackNC? Email us at <a class="sponsor-email"
                     href="mailto:sponsors@hacknc.com">sponsors@hacknc.com</a></p>
                 </div>
-                
             </div>
 
-            <div class="section background-light scrollspy" id='contact'>
+            <div class='section background-light scrollspy' id='prizes'>
+                <h2 class="center">Prizes</h2>
+                <h5 class="center">(More to be announced at the event)</h5>
+                <div class='container center'>
+                    <div class='row'>
+                        <div class='col s12 m4 l4 center'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                    <h5>HackNC</h5>
+                                    <p><u>1st Place</u></p>
+                                    <p>One GoPro HERO Session per Team Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col s12 m4 l4 center'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                    <h5>HackNC</h5>
+                                    <p><u>2nd Place</u></p>
+                                    <p>One Amazon Echo Dot per Team Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col s12 m4 l4 center'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                    <h5>HackNC</h5>
+                                    <p><u>3nd Place</u></p>
+                                    <p>One Mini Quadcopter per Team Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col s12 m4 l4 center'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                    <h5>Capital One</h5>
+                                    <p><u>Best Financial Hack</u></p>
+                                    <p>One $250 Amazon Gift Card per Team Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col s12 m4 l4 center'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                    <h5>CapTech</h5>
+                                    <p><u>Most Community Impact</u></p>
+                                    <p>One Amazon Echo Dot per Team Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col s12 m4 l4 center'>
+                            <div class='card'>
+                                <div class='card-content'>
+                                    <h5>SentryOne</h5>
+                                    <p><u>Best Use of the Microsoft Stack</u></p>
+                                    <p>One $50 Amazon Gift Card per Team Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="section background-dark scrollspy" id='contact'>
                 <h2 class="center">Contact</h2>
                 <div class="container">
                     <div class="row">
@@ -325,10 +402,10 @@ Gymnasium at UNC-Chapel Hill!</p>
                 </div>
             </div>
 
-            <script src="static/assets/js/main.js"></script>
-            <script src="static/assets/js/schedule.js"></script>
-            <script src="static/assets/js/register.js"></script>
-            <script src="static/assets/js/flipclock.min.js"></script>
+            <script src="/static/assets/js/main.js"></script>
+            <script src="/static/assets/js/schedule.js"></script>
+            <script src="/static/assets/js/register.js"></script>
+            <script src="/static/assets/js/flipclock.min.js"></script>
 
     </body>
     <script>

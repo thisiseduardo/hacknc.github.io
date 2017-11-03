@@ -1,58 +1,3 @@
-* {
-  font-family: 'Josefin Sans';
-  font-size: 1.1rem; }
-  @media only screen and (min-width: 768px) {
-    * {
-      font-size: 1.3rem; } }
-
-#home {
-  text-align: center;
-  padding-bottom: 0;
-  top: 0;
-  left: 0;
-  background-image: url("/static/assets/images/vign3L.png");
-  background-size: 100%;
-  background-repeat: no-repeat; }
-
-#tubes-row {
-  position: relative;
-  height: 400px;
-  margin-bottom: 1%; }
-
-#tubes {
-  position: relative;
-  background-image: url("/static/assets/images/tubes-only3.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 100%;
-  bottom: 0; }
-
-#countdown-content {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  margin-right: -50%;
-  transform: translate(-50%, 0%); }
-  @media only screen and (min-width: 400px) {
-    #countdown-content {
-      height: 25%; } }
-  @media only screen and (min-width: 1248px) {
-    #countdown-content {
-      height: 30%; } }
-
-#center-wrapper {
-  text-align: center; }
-
-#countdown {
-  display: inline-block;
-  width: auto; }
-
-.table-of-contents a.active {
-  font-weight: bold !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border-bottom: 2px solid #fff !important; }
-
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6890,65 +6835,60 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
+* {
+  font-family: 'Helvetica';
+  font-size: 1.1rem; }
+  @media only screen and (min-width: 768px) {
+    * {
+      font-size: 1.3rem; } }
+
+body {
+  background-color: #204F80; }
+
+#home {
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-image: url("/static/assets/images/vign3L.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#tubes-row {
+  position: relative;
+  height: 20%; }
+
+#tubes {
+  position: relative;
+  vertical-align: bottom;
+  width: 300px;
+  bottom: 0; }
+
+.table-of-contents a.active {
+  font-weight: bold !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 2px solid #fff !important; }
+
+#live-content {
+  padding-top: 20px; }
+
+#live-content .row .col iframe, #live-content .row .slide iframe {
+  margin: 1rem 0 1rem 0 !important;
+  width: 100% !important; }
+
+.card {
+  margin: 1rem 0 2rem 0 !important;
+  background-color: #FFFFFF;
+  border-radius: 5px; }
+
+.card .card-action:last-child {
+  border-radius: 0 0 5px 5px; }
+
 .background-light {
   background-color: #204F80;
   color: #FFFFFF; }
 
 .background-dark {
   background-color: #193e66;
-  color: #FFFFFF; }
-
-#email-form {
-  display: inline-block; }
-
-.component, .component:focus {
-  background-color: #FFC027;
-  color: #000000;
-  display: inline-block;
-  height: 50% !important;
-  width: 20% !important;
-  min-width: 200px !important;
-  text-decoration: none;
-  margin: 10px;
-  font-size: 80% !important; }
-
-.component:hover {
-  background-color: #FFC027;
-  color: #FFFFFF; }
-
-#email:focus + label {
-  color: #FFFFFF; }
-
-#email:focus {
-  border-bottom: 1px solid #FFFFFF;
-  box-shadow: 0 1px 0 0 #000000; }
-
-input[name='email'] .prefix.active {
-  color: #FFFFFF; }
-
-label[for='email'] {
-  color: #FFFFFF; }
-
-.map-container {
-  width: 100%;
-  height: 400px; }
-
-.map-container iframe {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-.faq-dark {
-  background-color: #193e66;
-  color: #FFFFFF; }
-
-.faq-light {
-  background-color: #204F80;
-  color: #FFFFFF; }
-
-.faq-ans {
-  background-color: #272727;
   color: #FFFFFF; }
 
 .slide {
@@ -6962,6 +6902,7 @@ label[for='email'] {
   padding-top: 0; }
 
 .nitem a span {
+  font-family: 'Josefin Sans';
   font-size: 14px;
   position: relative;
   top: 40%;
@@ -6984,12 +6925,6 @@ label[for='email'] {
   position: fixed;
   width: 100%; }
 
-.even {
-  background-color: #9084CD; }
-
-.odd {
-  background-color: #34248B; }
-
 .section a, .section a:active, .section a:hover, .section a:visited {
   color: #FFC027;
   text-decoration: none; }
@@ -7000,97 +6935,37 @@ label[for='email'] {
 .section h2 {
   margin-bottom: 0; }
 
-@media only screen and (min-width: 768px) {
-  .table-container {
-    width: 60% !important;
-    margin-left: 20% !important; } }
+.card-content p, td {
+  font-size: 1rem; }
 
-#travel .row {
-  margin-bottom: 0; }
+#wifi-table {
+  border-top: 1px solid #ddd;
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-.grant-table {
-  width: 60%;
-  min-width: 280px; }
+#wifi-table:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px; }
 
-.grant-table td, .grant-table th {
-  padding: 0; }
+#wifi-table td {
+  vertical-align: top; }
 
-#schedule table tr:nth-child(even) {
-  background-color: #193e66; }
+#wifi-table td {
+  border: 1px solid #ddd; }
 
-#schedule table tr:nth-child(odd) {
-  background-color: #204F80; }
+#wifi-table tr:first-child th {
+  border-top: 0; }
 
-.schedule tr {
-  width: 100% !important;
-  border-radius: 5px; }
+#wifi-table tr:last-child td {
+  border-bottom: 0; }
 
-.time, .event, .place {
-  border-radius: 0px; }
+#wifi-table td {
+  border-left: 0; }
 
-.time {
-  width: 25%; }
+#wifi-table td {
+  border-right: 0; }
 
-.day {
-  background-color: transparent !important; }
+#wifi-table tr td:last-child {
+  padding-left: 20px; }
 
-.daycell {
-  background-color: transparent;
-  font-size: 1.7rem; }
-  @media only screen and (min-width: 768px) {
-    .daycell {
-      font-size: 2rem; } }
-
-.sponsors {
-  background: #e4e4df;
-  color: #204F80; }
-  .sponsors a, .sponsors a:active, .sponsors a:hover, .sponsors a:visited {
-    color: #3D9BF5;
-    text-decoration: none; }
-
-.sponsor-email:active, .sponsor-email:hover {
-  color: #3D9BF5;
-  text-decoration: underline !important; }
-
-#contact-links li {
-  list-style-type: none; }
-
-#contact-links li.left {
-  float: none !important;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    #contact-links li.left {
-      float: left !important;
-      width: 50%; } }
-
-#contact-links li.right {
-  float: none !important;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    #contact-links li.right {
-      float: right !important;
-      width: 50%; } }
-
-.sponsor-image {
-  display: inline-block; }
-
-.tier-4 {
-  width: 40%;
-  min-width: 300px; }
-
-.tier-3 {
-  width: 30%;
-  min-width: 250px; }
-
-.tier-2 {
-  width: 25%;
-  min-width: 250px; }
-
-.tier-1 {
-  width: 16%;
-  min-width: 200px; }
-
-#prizes .card {
-  background-color: #193e66; }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=live.css.map */
