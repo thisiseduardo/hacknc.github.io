@@ -15,14 +15,6 @@ var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 $(document).ready(function() {
     $('.scrollspy').scrollSpy({"scrollOffset": 20});
     
-    var countdownSeconds = 1509753600 - (new Date).getTime()/1000;
-    var clock = $('#countdown').FlipClock(countdownSeconds, {
-		clockFace: 'DailyCounter',
-        countdown: true
-    });
-
-    $('.flip-clock-label').remove();
-    $('.flip-clock-wrapper').css('margin','0');
     $('#tubes-row').css('height', $(document).width()/maxWidth*bannerHeight + 'px');
     var scaleValue = Math.sqrt(startScale*$(window).width()/maxWidth);
     // if(!iOS) {
