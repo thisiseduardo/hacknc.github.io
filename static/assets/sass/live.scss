@@ -77,7 +77,7 @@ body {
 
 #live-content .row .col iframe {
     margin: 1rem 0 1rem 0 !important;
-    width: 100% !important;
+//     width: 100% !important;
 }
 
 .card {
@@ -185,38 +185,38 @@ body {
     font-size: 1rem;
 }
 
-#wifi-table {
+#live-table {
     border-top: 1px solid #ddd;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-#wifi-table:last-child {
+#live-table:last-child {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
-#wifi-table td {
+#live-table td {
     vertical-align: top;
 }
 
-#wifi-table td {
+#live-table td {
     border: 1px solid #ddd;
 }
 
-#wifi-table tr:first-child th {
+#live-table tr:first-child th {
     border-top: 0;
 }
-#wifi-table tr:last-child td {
+#live-table tr:last-child td {
     border-bottom: 0;
 }
-#wifi-table td{
+#live-table td{
     border-left: 0;
 }
-#wifi-table td {
+#live-table td {
     border-right: 0;
 }
 
-#wifi-table tr td:last-child {
+#live-table tr td:last-child {
     padding-left: 20px;
 }
