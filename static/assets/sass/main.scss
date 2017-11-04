@@ -114,11 +114,17 @@ $a-tags-hover: 'a:active, a:hover';
     color: $black;
     display: inline-block;
     height: 50% !important;
-    width: 20% !important;
+    width: 50% !important;
     min-width: 200px !important;
     text-decoration: none;
     margin: 10px;
-    font-size: 80% !important;
+    font-size: 0.7rem !important;
+    @include mq('tablet') {
+        font-size: 1rem !important;
+    }
+    @include mq('desktop') {
+        font-size: 1.5rem !important;
+    }
 }
 
 .component:hover {

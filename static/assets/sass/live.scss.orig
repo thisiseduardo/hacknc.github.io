@@ -1,0 +1,223 @@
+@import 'components/palette';
+@import 'materialize';
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+* {
+    font-family: 'Helvetica';
+    font-size: 1.1rem;
+    @include mq('tablet') {
+        font-size: 1.3rem;
+    }
+}
+
+body {
+    background-color: $blue-1;
+}
+
+#home {
+    text-align: center;
+    padding-bottom: 0;
+    top: 0;
+    left: 0;
+    background-image: url('/static/assets/images/vign3L.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#tubes-row {
+    position: relative;
+    height: 20%;
+}
+
+#tubes {
+    position: relative;
+    vertical-align: bottom;
+    width: 300px;
+    bottom: 0;
+}
+
+.table-of-contents {
+    a {
+        &.active {
+            font-weight: bold ! important;
+            background-color: rgba(255, 255, 255, 0.1) ! important;
+            //padding-bottom: 15px ! important;
+            border-bottom: 2px solid #fff ! important;
+        }
+    }
+}
+
+#live-content {
+    padding-top: 20px;
+}
+
+#live-content .row .col iframe {
+    margin: 1rem 0 1rem 0 !important;
+    width: 100% !important;
+}
+
+.card {
+    margin: 1rem 0 2rem 0 !important;
+    background-color: $white;
+    border-radius: 5px;
+}
+
+.card .card-action:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.background-light {
+    background-color: $blue-1;
+    color: $white;
+}
+
+.background-dark {
+    background-color: $blue-12;
+    color: $white;
+}
+
+// .component, .component:focus {
+//     background-color: $yellow-1;
+//     color: $black;
+//     display: inline-block;
+//     height: 50% !important;
+//     width: 20% !important;
+//     min-width: 200px !important;
+//     text-decoration: none;
+//     margin: 10px;
+//     font-size: 80% !important;
+// }
+
+// .component:hover {
+//     background-color: $yellow-1;
+//     color: $white;
+// }
+
+.slide {
+    @extend .col, .s12;
+    min-height: 100%;
+}
+
+.title {
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.nbar {
+    @extend .tabs;
+    padding-top: 0;
+}
+
+.nitem {
+    @extend .tab;
+}
+
+.nitem a span{
+    font-family: 'Josefin Sans';
+    font-size: 14px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+
+.ge {
+    padding-bottom: 30px;
+}
+
+#navbar {
+    background-color: rgba(30, 136, 229, 0);
+    box-shadow: 1px 1px 1px -1px #000000;
+}
+
+.nbar {
+    overflow: hidden;
+}
+
+.nfixed {
+    margin-top: 0;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.section {
+    #{$a-tags} {
+        color: $yellow-1;
+        text-decoration: none;
+    }
+
+    #{$a-tags-hover} {
+        color: $yellow-1;
+        text-decoration: underline;
+    }
+}
+
+.section h2 {
+    margin-bottom: 0;
+}
+
+.card-content p, td {
+    font-size: 1rem;
+}
+
+#wifi-table {
+    border-top: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#wifi-table:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#wifi-table td {
+    vertical-align: top;
+}
+
+#wifi-table td {
+    border: 1px solid #ddd;
+}
+
+#wifi-table tr:first-child th {
+    border-top: 0;
+}
+#wifi-table tr:last-child td {
+    border-bottom: 0;
+}
+#wifi-table td{
+    border-left: 0;
+}
+#wifi-table td {
+    border-right: 0;
+}
+
+#wifi-table tr td:last-child {
+    padding-left: 20px;
+}

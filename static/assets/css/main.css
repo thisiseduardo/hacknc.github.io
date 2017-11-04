@@ -6906,11 +6906,17 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   color: #000000;
   display: inline-block;
   height: 50% !important;
-  width: 20% !important;
+  width: 50% !important;
   min-width: 200px !important;
   text-decoration: none;
   margin: 10px;
-  font-size: 80% !important; }
+  font-size: 0.7rem !important; }
+  @media only screen and (min-width: 768px) {
+    .component, .component:focus {
+      font-size: 1rem !important; } }
+  @media only screen and (min-width: 1248px) {
+    .component, .component:focus {
+      font-size: 1.5rem !important; } }
 
 .component:hover {
   background-color: #FFC027;
