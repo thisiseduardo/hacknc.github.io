@@ -6872,7 +6872,9 @@ body {
   padding-top: 20px; }
 
 #live-content .row .col iframe, #live-content .row .slide iframe {
-  margin: 1rem 0 1rem 0 !important; }
+  margin: 1rem 0 1rem 0 !important;
+  width: 100% !important;
+  height: 70% !important; }
 
 .card {
   margin: 1rem 0 2rem 0 !important;
@@ -6881,6 +6883,9 @@ body {
 
 .card .card-action:last-child {
   border-radius: 0 0 5px 5px; }
+
+.card .card-action .btn, .card .card-action .btn-large {
+  margin: 5px; }
 
 .background-light {
   background-color: #204F80;

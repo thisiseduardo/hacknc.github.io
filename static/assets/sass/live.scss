@@ -77,7 +77,8 @@ body {
 
 #live-content .row .col iframe {
     margin: 1rem 0 1rem 0 !important;
-//     width: 100% !important;
+    width: 100% !important;
+    height: 70% !important;
 }
 
 .card {
@@ -88,6 +89,10 @@ body {
 
 .card .card-action:last-child {
     border-radius: 0 0 5px 5px;
+}
+
+.card .card-action .btn {
+    margin: 5px;
 }
 
 .background-light {
